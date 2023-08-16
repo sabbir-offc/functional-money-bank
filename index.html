@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Baap Er Bank</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="my-24">
+      <h1 class="text-5xl font-semibold text-center">
+        বাপের ব্যাংকে তোমাকে <span class="text-red-500 font-bold">স্বাগতম!!!</span>
+      </h1>
+    </header>
+    <main>
+      <!-- balance and transaction -->
+      <section class="my-6">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+          <div class="bg-teal-500 p-9">
+            <h4 class="text-2xl">টাকা দিয়েছো</h4>
+            <h2 class="text-4xl" >$<span id="deposit-total">00</span></h2>
+          </div>
+          <div class="bg-sky-400 p-9">
+            <h4 class="text-2xl">টাকা বের করেছো</h4>
+            <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
+          </div>
+          <div class="bg-indigo-400 p-9">
+            <h4 class="text-2xl">টাকা আছে</h4>
+            <h2 class="text-4xl">$<span id="balance-total">1240</span></h2>
+          </div>
+        </div>
+      </section>
+      <section class="my-10">
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+          <div class="bg-violet-500 p-10">
+            <h3 class="text-white text-3xl">টাকা ‍ডিপোজিট করো</h3>
+            <input class="block px-5 w-3/4 rounded-xl py-4 my-6" id="deposit-field" type="text" name="" placeholder="$ Amount You Want To Deposit."  />
+            <button id="btn-deposit" class="px-4 py-3 text-white bg-fuchsia-500 rounded-lg font-medium text-2xl hover:bg-lime-400 hover:text-black">ডিপোজিট</button>
+          </div>
+          <div class="bg-violet-800 p-10">
+            <h3 class="text-white text-3xl">টাকা বের করার রিকুয়েস্ট দাও</h3>
+            <input class="block px-5 w-3/4 rounded-xl py-4 my-6" id="withdraw-field" type="text" name="" placeholder="$ Amount You Want To Withdraw."  />
+            <button id="btn-withdraw" class="px-4 py-3 text-white bg-rose-500 rounded-lg font-medium text-2xl hover:bg-amber-400 hover:text-black" >টাকা বের করো</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+  </body>
+</html>
